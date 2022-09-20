@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block header %}
+<h1>
+	{% block title %}{{ user['first_name'] }} {{ user['last_name'] }}{% endblock
+	%}
+</h1>
+<a href="{{ url_for('user.update') }}">Edit Profile</a>
+<a href="{{ url_for('user.delete') }}" style="padding-left: 0.5rem"
+	>Delete Profile</a
+>
+{% endblock %} {% block content %} {% endblock %}
